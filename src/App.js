@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Services from "./components/Services";
+import Footer from "./components/Footer";
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -56,6 +57,7 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="services" element={<Services />} />
         </Routes>
+        <Footer />
       </Router>
     </ThemeProvider>
   );

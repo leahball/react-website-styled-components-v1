@@ -54,9 +54,7 @@ const Footer = () => {
           <SocialMediaWrap>
             <SocialLogo to="/">Leah Ball</SocialLogo>
             <WebsiteRights>
-              Leah Ball copyright {new Date().getFullYear()}
-              <br />
-              All Rights Reserved
+              Leah Ball © {new Date().getFullYear()} All Rights Reserved
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink href="//" target="_blank" aria-label="LinkedIn">

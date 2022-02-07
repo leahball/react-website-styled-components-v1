@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   background: ${(p) => p.theme.ink};
@@ -28,9 +29,10 @@ export const NavbarContainer = styled.div`
   max-width: 850px;
 `;
 
-export const NavLogo = styled.div`
-  color: pink;
+export const NavLogo = styled(LinkS)`
+  color: ${(p) => p.theme.melon};
   justify-self: flex-start;
+  cursor: pointer;
   font-size: 3rem;
   display: flex;
   align-items: center;

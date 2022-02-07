@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
+import { animateScroll as scroll } from "react-scroll/modules";
 import {
   Nav,
   NavbarContainer,
@@ -14,11 +15,17 @@ import {
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo>Leah Ball</NavLogo>
+          <NavLogo to="/" onClick={toggleHome}>
+            Leah Ball
+          </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
@@ -27,14 +34,14 @@ const Navbar = ({ toggle }) => {
               <NavLinks to="/">about</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="services">services</NavLinks>
+              <NavLinks to="skills">skills</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact">contact</NavLinks>
+              <NavLinks to="projects">projects</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="login">Sign In</NavBtnLink>
+            <NavBtnLink to="login">client portal</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

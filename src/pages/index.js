@@ -1,18 +1,18 @@
 import React from "react";
 import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
-import { homeObj1, homeObj2, homeObj3 } from "../components/InfoSection/Data";
-import PageLayout from "./PageLayout";
+import { homeObj1, homeObj2 } from "../components/InfoSection/Data";
+import Projects from "../components/Projects";
+import Skills from "../components/Skills";
 
 const Home = () => {
   return (
     <>
-      <PageLayout>
-        <HeroSection />
-        <InfoSection {...homeObj1} />
-        <InfoSection {...homeObj2} />
-        <InfoSection {...homeObj3} />
-      </PageLayout>
+      <HeroSection />
+      <InfoSection {...homeObj2} />
+      <InfoSection {...homeObj1} />
+      <Skills />
+      <Projects />
     </>
   );
 };

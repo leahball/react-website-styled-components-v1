@@ -1,20 +1,45 @@
 import styled from "styled-components";
 
+export const LoginContainer = styled.div`
+  height: 800px;
+  display: flex;
+  align-items: center;
+  background: ${(p) => p.theme.cream};
+  padding-top: 80px;
+
+  @media screen and (max-width: 768px) {
+    height: 1100px;
+  }
+
+  /* @media screen and (max-width: 480px) {
+    height: 1300px;
+  } */
+`;
 export const LoginWrapper = styled.div`
   display: flex;
   flex-flow: column;
-  justify-content: center;
-  background-color: ${(p) => p.theme.cream};
+  /* justify-content: center; */
   height: 100%;
   width: 100%;
   align-items: center;
-  margin-top: 25px;
 `;
 
 export const Form = styled.form`
   display: flex;
   min-width: 350px;
   flex-direction: column;
+`;
+
+export const LoginH = styled.h1`
+  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: "#783857";
+
+  @media screen and (max-width: 480px) {
+    font-size: 24px;
+  }
 `;
 
 export const Input = styled.input`

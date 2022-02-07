@@ -43,7 +43,7 @@ export const VideoBg = styled.video`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  filter: hue-rotate(170deg) brightness(120%) invert(85%);
+  /* filter: hue-rotate(-80deg) brightness(100%); */
   background: ${(p) => p.theme.heliotrope};
 `;
 

@@ -5,8 +5,9 @@ import { createGlobalStyle, ThemeProvider } from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-import Services from "./components/Services";
 import Footer from "./components/Footer";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -32,7 +33,7 @@ const theme = {
   cream: "#f6f1e2",
   lightLogo: "#FFBBB2",
   heliotrope: "#db3ffb",
-  brown: "#783857",
+  brown: "#61252D",
   melon: "#FE9A8D",
   zombie: "#E2D996",
   ink: "#4D097B",
@@ -55,7 +56,8 @@ function App() {
           <Route exact path="/"></Route>
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
-          <Route path="services" element={<Services />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="skills" element={<Skills />} />
         </Routes>
         <Footer />
       </Router>
@@ -64,5 +66,3 @@ function App() {
 }
 
 export default App;
-
-// isOpen={isOpen} toggle={toggle}

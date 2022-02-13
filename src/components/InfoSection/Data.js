@@ -27,7 +27,7 @@ export const homeObj2 = {
     "With 15 years experience in many different collaborative roles, I understand that you're only as good as what you are able to successfully communicate. I take pride in the process to get on the same page and decide where it is that we are building towards. I want it to be fun and simple so the work reflects that.",
   buttonLabel: "check it out",
   imgStart: false,
-  img: require("../../images/collab.jpg"),
+  img: require("../../images/collab.png"),
   alt: "Octopus illustration by LB",
   dark: false,
   primary: false,

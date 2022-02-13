@@ -5,7 +5,7 @@ export const SkillsContainer = styled.div`
   /* padding: 10% 6%; */
   height: 860px;
 
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 820px) {
     min-height: 1000px;
   }
 `;
@@ -59,6 +59,9 @@ export const SkillsLinkItems = styled.div`
 export const SkillsH1 = styled.h1`
   font-size: 4.5rem;
   color: ${(p) => p.theme.ink};
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: ${(p) => p.theme.melon};
   margin-bottom: 36px;
 
   @media screen and (max-width: 480px) {

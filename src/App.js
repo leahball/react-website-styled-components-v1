@@ -8,6 +8,7 @@ import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Octopus from "./pages/portfolioPage/Octopus";
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -57,6 +58,7 @@ function App() {
           <Route exact path="/"></Route>
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
+          <Route path="octopus" element={<Octopus />} />
           <Route path="projects" element={<Projects />} />
           <Route path="skills" element={<Skills />} />
         </Routes>

@@ -20,7 +20,7 @@ export const SkillsWrapper = styled.div`
   margin: 0 auto;
 `;
 
-export const SkillsLinksContainer = styled.div`
+export const SkillsListContainer = styled.div`
   display: flex;
   justify-content: center;
 
@@ -29,7 +29,7 @@ export const SkillsLinksContainer = styled.div`
   }
 `;
 
-export const SkillsLinksWrapper = styled.div`
+export const SkillsListWrapper = styled.div`
   display: flex;
   padding: 2% 0;
   border-top: 2px solid ${(p) => p.theme.light};
@@ -41,7 +41,7 @@ export const SkillsLinksWrapper = styled.div`
   }
 `;
 
-export const SkillsLinkItems = styled.div`
+export const SkillsListItems = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -69,7 +69,7 @@ export const SkillsH1 = styled.h1`
   }
 `;
 
-export const SkillsLinkTitle = styled.h1`
+export const SkillsListTitle = styled.h1`
   margin-bottom: 16px;
   color: ${(p) => p.theme.contrast};
   font-size: 1.5rem;
@@ -77,7 +77,7 @@ export const SkillsLinkTitle = styled.h1`
   text-transform: uppercase;
 `;
 
-export const SkillsLink = styled.p`
+export const SkillsList = styled.li`
   color: ${(p) => p.theme.brown};
   text-decoration: none;
   margin-bottom: 8%;

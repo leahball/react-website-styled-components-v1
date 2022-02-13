@@ -6,7 +6,7 @@ export const ProjectsContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: ${(p) => p.theme.light};
-  padding: 3% 6%10% 6%;
+  padding: 3% 6% 10% 6%;
 `;
 
 export const ProjectsWrapper = styled.div`

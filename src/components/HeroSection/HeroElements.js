@@ -30,6 +30,10 @@ export const HeroContent = styled.div`
     min-height: 550px;
     justify-content: center;
   }
+
+  @media screen and (max-width: 480px) {
+    min-height: 300px;
+  }
 `;
 
 export const HeroH1 = styled.h1`
@@ -67,10 +71,12 @@ export const HeroP = styled.p`
 
   @media screen and (max-width: 768px) {
     font-size: 2rem;
+    line-height: 4rem;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
+    line-height: 4rem;
   }
 `;
 

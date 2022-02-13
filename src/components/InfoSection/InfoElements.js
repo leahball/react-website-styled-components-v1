@@ -87,9 +87,13 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 2rem;
+  line-height: 3.4rem;
   color: ${({ darkText }) => (darkText ? "#61252D" : "#EFE6EF")}; //ink cream
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 0;
+  }
 `;
 
 export const BtnWrap = styled.div`

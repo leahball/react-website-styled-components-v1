@@ -22,13 +22,25 @@ const Footer = () => {
               © {new Date().getFullYear()} All Rights Reserved
             </WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href="//" target="_blank" aria-label="LinkedIn">
+              <SocialIconLink
+                href="https://www.linkedin.com/in/leahball/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
                 <FaLinkedin />
               </SocialIconLink>
-              <SocialIconLink href="//" target="_blank" aria-label="Github">
+              <SocialIconLink
+                href="https://github.com/leahball"
+                target="_blank"
+                aria-label="Github"
+              >
                 <FaGithub />
               </SocialIconLink>
-              <SocialIconLink href="//" target="_blank" aria-label="Twitter">
+              <SocialIconLink
+                href="https://twitter.com/bodyinmetal"
+                target="_blank"
+                aria-label="Twitter"
+              >
                 <FaTwitter />
               </SocialIconLink>
             </SocialIcons>

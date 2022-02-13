@@ -4,7 +4,7 @@ export const LoginContainer = styled.div`
   height: 800px;
   display: flex;
   align-items: center;
-  background: ${(p) => p.theme.cream};
+  background: ${(p) => p.theme.light};
   padding-top: 80px;
 
   @media screen and (max-width: 768px) {
@@ -51,7 +51,7 @@ export const Button = styled.button`
   padding: 2%;
   border-radius: 10px;
   margin-top: 4%;
-  background-color: ${(p) => p.theme.heliotrope};
+  background-color: ${(p) => p.theme.contrast};
   cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 

@@ -1,11 +1,17 @@
 import styled from "styled-components";
 
 export const SkillsContainer = styled.div`
-  background-color: ${(p) => p.theme.zombie};
+  background-color: ${(p) => p.theme.lightMed};
+  /* padding: 10% 6%; */
+  height: 860px;
+
+  @media screen and (max-width: 780px) {
+    min-height: 1000px;
+  }
 `;
 
 export const SkillsWrapper = styled.div`
-  padding: 48px 24px;
+  padding: 8% 8%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,11 +32,12 @@ export const SkillsLinksContainer = styled.div`
 export const SkillsLinksWrapper = styled.div`
   display: flex;
   padding: 2% 0;
-  border-top: 2px solid ${(p) => p.theme.cream};
-  border-bottom: 2px solid ${(p) => p.theme.cream};
+  border-top: 2px solid ${(p) => p.theme.light};
+  border-bottom: 2px solid ${(p) => p.theme.light};
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
+    padding: 2%;
   }
 `;
 
@@ -61,7 +68,7 @@ export const SkillsH1 = styled.h1`
 
 export const SkillsLinkTitle = styled.h1`
   margin-bottom: 16px;
-  color: ${(p) => p.theme.heliotrope};
+  color: ${(p) => p.theme.contrast};
   font-size: 1.5rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -70,6 +77,22 @@ export const SkillsLinkTitle = styled.h1`
 export const SkillsLink = styled.p`
   color: ${(p) => p.theme.brown};
   text-decoration: none;
-  margin-bottom: 4%;
+  margin-bottom: 8%;
   font-size: 1.5rem;
+  line-height: 4rem;
+  position: relative;
+  z-index: 1;
+  text-decoration: overline;
+  text-decoration-color: ${(p) => p.theme.melon};
+
+  :after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    background-color: ${(p) => p.theme.light};
+    left: -8px;
+    bottom: 6px;
+    z-index: -1;
+  }
 `;

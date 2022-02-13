@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Video from "../../Videos/galaxy.mp4";
+// import Video from "../../Videos/galaxy.mp4";
 import { Button } from "../ButtonElement";
 import {
   HeroContainer,
   HeroBg,
-  VideoBg,
+  // VideoBg,
   HeroContent,
   HeroH1,
   HeroP,
@@ -22,15 +22,15 @@ const HeroSection = () => {
 
   return (
     <HeroContainer>
-      <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
-      </HeroBg>
+      {/* <HeroBg> */}
+      {/* <VideoBg autoPlay loop muted src={Video} type="video/mp4" /> */}
+      {/* </HeroBg> */}
       <HeroContent>
         <HeroH1>DESIGNER + CODER</HeroH1>
         <HeroP>
-          Combining innovation in design solutions and systems with clean
-          communicative code. Intentional and curious human who specializes in
-          delightful collaborative experiences.
+          Combining innovation in design solutions with clean elegant code. As a
+          collaborator, I am an intentional and curious human who specializes in
+          user-centered design experiences.
         </HeroP>
         <HeroBtnWrapper>
           <Button

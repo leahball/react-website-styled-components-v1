@@ -30,9 +30,10 @@ a {
 `;
 
 const theme = {
-  cream: "#f6f1e2",
-  lightLogo: "#FFBBB2",
-  heliotrope: "#db3ffb",
+  light: "#EFE6EF",
+  lightMed: "#E9D6EA",
+  lightLogo: "#FFDED9",
+  contrast: "#db3ffb",
   brown: "#61252D",
   melon: "#FE9A8D",
   zombie: "#E2D996",

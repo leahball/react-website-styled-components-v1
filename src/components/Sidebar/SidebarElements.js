@@ -7,7 +7,7 @@ export const SidebarContainer = styled.aside`
   z-index: 99;
   width: 100%;
   height: 100%;
-  background: ${(p) => p.theme.cream};
+  background: ${(p) => p.theme.lightMed};
   display: grid;
   align-items: center;
   top: 0;
@@ -18,7 +18,7 @@ export const SidebarContainer = styled.aside`
 `;
 
 export const CloseIcon = styled(FaTimes)`
-  color: ${(p) => p.theme.cream};
+  color: ${(p) => p.theme.melon};
 `;
 
 export const Icon = styled.div`
@@ -59,7 +59,7 @@ export const SidebarLink = styled(LinkR)`
   cursor: pointer;
 
   &:hover {
-    color: ${(p) => p.theme.heliotrope};
+    color: ${(p) => p.theme.contrast};
     transition: 0ms.2s ease-in-out;
   }
 `;
@@ -71,10 +71,10 @@ export const SideBtnWrap = styled.div`
 
 export const SidebarRoute = styled(LinkR)`
   border-radius: 50px;
-  background: ${(p) => p.theme.heliotrope};
+  background: ${(p) => p.theme.contrast};
   white-space: nowrap;
   padding: 16px 64px;
-  color: ${(p) => p.theme.cream};
+  color: ${(p) => p.theme.light};
   font-size: 2rem;
   outline: none;
   border: none;
@@ -84,7 +84,7 @@ export const SidebarRoute = styled(LinkR)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${(p) => p.theme.cream};
-    color: ${(p) => p.theme.zombie};
+    background: ${(p) => p.theme.ink};
+    color: ${(p) => p.theme.light};
   }
 `;

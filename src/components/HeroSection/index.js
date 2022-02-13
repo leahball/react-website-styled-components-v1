@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { Button } from "../ButtonElement";
 import {
   HeroContainer,
-  HeroBg,
   // VideoBg,
   HeroContent,
   HeroH1,

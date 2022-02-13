@@ -53,6 +53,9 @@ export const ProjectsIcon = styled.img`
 export const ProjectsH1 = styled.h1`
   font-size: 4.5rem;
   color: ${(p) => p.theme.ink};
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: ${(p) => p.theme.melon};
   margin-bottom: 36px;
 
   @media screen and (max-width: 480px) {

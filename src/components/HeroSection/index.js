@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-// import Video from "../../Videos/galaxy.mp4";
 import { Button } from "../ButtonElement";
 import {
   HeroContainer,
-  // VideoBg,
   HeroContent,
   HeroH1,
   HeroP,
@@ -21,9 +19,6 @@ const HeroSection = () => {
 
   return (
     <HeroContainer>
-      {/* <HeroBg> */}
-      {/* <VideoBg autoPlay loop muted src={Video} type="video/mp4" /> */}
-      {/* </HeroBg> */}
       <HeroContent>
         <HeroH1>DESIGNER + CODER</HeroH1>
         <HeroP>

@@ -1,24 +1,32 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div`
-  color: ${(p) => p.theme.heliotrope};
-  background: ${({ lightBg }) => (lightBg ? "#FFFDF8" : "#4D097B")};
+  /* color: ${(p) => p.theme.heliotrope}; */
+  padding: 3% 5%;
+
+  background: ${({ lightBg }) =>
+    lightBg ? "#efe6ef" : "#d4c5d5"}; //light then lightMed
 
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    padding: 50px 20px;
   }
 `;
 
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 24px;
+  padding: 3% 4%;
   justify-content: center;
+  background-color: ${(p) => p.theme.lightMed};
+  border-radius: 20px;
+
+  @media screen and (max-width: 768px) {
+    padding: 5%;
+  }
 `;
 
 export const InfoRow = styled.div`
@@ -53,7 +61,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: ${(p) => p.theme.ink};
+  color: ${(p) => p.theme.light};
   background-color: ${(p) => p.theme.melon};
   font-size: 16px;
   line-height: 20px;
@@ -69,7 +77,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#FFFDF8" : "#783857")};
+  color: ${({ lightText }) => (lightText ? "#EFE6EF" : "#4D097B")};
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -81,7 +89,7 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#783857" : "#FFFDF8")};
+  color: ${({ darkText }) => (darkText ? "#61252D" : "#EFE6EF")}; //ink cream
 `;
 
 export const BtnWrap = styled.div`
@@ -98,4 +106,6 @@ export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+  border-radius: 25px;
+  filter: brightness(120%);
 `;

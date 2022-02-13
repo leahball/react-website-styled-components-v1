@@ -25,6 +25,7 @@ const Skills = () => {
                 <SkillsLink>CSS</SkillsLink>
                 <SkillsLink>JavaScript</SkillsLink>
                 <SkillsLink>Git</SkillsLink>
+                <SkillsLink>Node</SkillsLink>
               </SkillsLinkItems>
               <SkillsLinkItems>
                 <SkillsLinkTitle>Design</SkillsLinkTitle>
@@ -41,13 +42,16 @@ const Skills = () => {
                 <SkillsLink>Ceramics</SkillsLink>
                 <SkillsLink>Production Molds</SkillsLink>
                 <SkillsLink>Wax modeling</SkillsLink>
-                <SkillsLink>Foundry</SkillsLink>
+                <SkillsLink>Metalsmithing</SkillsLink>
+                <SkillsLink>Sewing</SkillsLink>
+                <SkillsLink>Painting</SkillsLink>
               </SkillsLinkItems>
               <SkillsLinkItems>
                 <SkillsLinkTitle>Human</SkillsLinkTitle>
                 <SkillsLink>Workshop Facilitation</SkillsLink>
                 <SkillsLink>Organizing</SkillsLink>
                 <SkillsLink>Project Management</SkillsLink>
+                <SkillsLink>Sustainability</SkillsLink>
               </SkillsLinkItems>
             </SkillsLinksWrapper>
           </SkillsLinksContainer>

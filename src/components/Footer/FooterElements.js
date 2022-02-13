@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
-  background-color: ${(p) => p.theme.brown};
+  background-color: ${(p) => p.theme.lightMed};
 `;
 
 export const FooterWrap = styled.div`
-  padding: 48px 24px;
+  padding: 2% 1%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +33,7 @@ export const SocialMediaWrap = styled.div`
 `;
 
 export const SocialLogo = styled(Link)`
-  color: ${(p) => p.theme.melon};
+  color: ${(p) => p.theme.contrast};
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
@@ -47,7 +47,7 @@ export const SocialLogo = styled(Link)`
 `;
 
 export const WebsiteRights = styled.small`
-  color: ${(p) => p.theme.cream};
+  color: ${(p) => p.theme.ink};
   margin-bottom: 16px;
 `;
 
@@ -59,6 +59,6 @@ export const SocialIcons = styled.div`
 `;
 
 export const SocialIconLink = styled.a`
-  color: ${(p) => p.theme.cream};
+  color: ${(p) => p.theme.ink};
   font-size: 24px;
 `;

@@ -70,7 +70,7 @@ export const HeroP = styled.p`
   text-decoration-color: pink;
 
   @media screen and (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 2.4rem;
     line-height: 4rem;
   }
 

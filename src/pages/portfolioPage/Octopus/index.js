@@ -1,8 +1,6 @@
 import React from "react";
 import Image1 from "./../../../images/strength-sm.png";
 import Image2 from "./../../../images/jet-propulsion-sm.png";
-// import Highlight1 from "./../../../images/chaad.png";
-import Image3 from "./../../../images/coral-sml.png";
 
 import {
   PortfolioGrid,
@@ -21,8 +19,8 @@ import {
   PortfolioListImages,
   HighlightWrapper,
   // HighlightCard,
-  HighlightImage,
-  HighlightIcon,
+  // HighlightImage,
+  // HighlightIcon,
   HighlightTitle,
   // HighlightH2,
   // HighlightP,

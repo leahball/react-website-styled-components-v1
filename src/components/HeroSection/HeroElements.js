@@ -84,7 +84,7 @@ export const HeroBtnWrapper = styled.div`
   margin-top: 32px;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
   align-items: left;
 `;
 

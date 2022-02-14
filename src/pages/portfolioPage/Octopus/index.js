@@ -1,5 +1,8 @@
 import React from "react";
 import Image1 from "./../../../images/strength-sm.png";
+import Image2 from "./../../../images/jet-propulsion-sm.png";
+import Highlight1 from "./../../../images/chaad.png";
+
 import {
   PortfolioGrid,
   PortfolioMainContent,
@@ -14,6 +17,17 @@ import {
   PortfolioList,
   PortfolioTextWrapper,
   HeaderTextWrapper,
+  PortfolioListImages,
+  HighlightWrapper,
+  HighlightCard,
+  HighlightImage,
+  HighlightIcon,
+  HighlightTitle,
+  HighlightH2,
+  HighlightP,
+  HighlightCol1,
+  HighlightCol2,
+  PortfolioListWrapper,
 } from "../PortfolioPageElements";
 
 const Octopus = () => {
@@ -35,7 +49,7 @@ const Octopus = () => {
             <PortfolioP>
               What makes me excited and optimistic is that everything on this
               planet is made of the same stuff just arranged for us in our own
-              unique individual and species specific ways. For example--humans
+              unique individual and species specific ways. For example—humans
               have retinal cells behind our eyes, which are highly specialized
               cells for visual perception, amazingly, Octopuses have them{" "}
               <span className="highlight">ALL OVER</span> their skin! Take a
@@ -73,26 +87,112 @@ const Octopus = () => {
               the card board. There were some bugs in this first round:
             </PortfolioP>
           </PortfolioTextWrapper>
+        </PortfolioMainContent>
+        <HighlightWrapper>
+          <HighlightTitle>Highlights</HighlightTitle>
+          <HighlightCol1>
+            <HighlightCard>
+              <HighlightImage>
+                <HighlightIcon src={Highlight1} />
+              </HighlightImage>
 
+              <HighlightH2>Built an API</HighlightH2>
+              <HighlightP>
+                Using Cheerio, Node, Express I created an API that scraped
+                popular science news magazines for all relevant Octopus content
+                to populate a news tab.
+              </HighlightP>
+            </HighlightCard>
+          </HighlightCol1>
+          <HighlightCol2>
+            <HighlightCard>
+              <HighlightImage>
+                <HighlightIcon src={Highlight1} />
+              </HighlightImage>
+
+              <HighlightH2>Redux Store</HighlightH2>
+              <HighlightP>
+                Utilizing Procreate I drew all related artwork for the site.
+                Overall it was 10 illustrations. I then created a design system
+                and website mock-up in Figma utilizing variants, prototypes and
+                interactions.
+              </HighlightP>
+            </HighlightCard>
+          </HighlightCol2>
+
+          <HighlightCol1>
+            <HighlightCard>
+              <HighlightImage>
+                <HighlightIcon src={Highlight1} />
+              </HighlightImage>
+
+              <HighlightH2>Figma</HighlightH2>
+              <HighlightP>
+                Utilizing Procreate I drew all related artwork for the site.
+                Overall it was 10 illustrations. I then created a design system
+                and website mock-up in Figma utilizing variants, prototypes and
+                interactions.
+              </HighlightP>
+            </HighlightCard>
+          </HighlightCol1>
+
+          <HighlightCol2>
+            <HighlightCard>
+              <HighlightImage>
+                <HighlightIcon src={Highlight1} />
+              </HighlightImage>
+
+              <HighlightH2>Procreate + Storyboard</HighlightH2>
+              <HighlightP>
+                Utilizing Procreate I drew all related artwork for the site.
+                Overall it was 10 illustrations. I then created a design system
+                and website mock-up in Figma utilizing variants, prototypes and
+                interactions.
+              </HighlightP>
+            </HighlightCard>
+          </HighlightCol2>
+        </HighlightWrapper>
+        <PortfolioListWrapper>
           <PortfolioListItems>
             <PortfolioListH>Surprising Facts About Octopuses</PortfolioListH>
             <PortfolioList>
-              The first game I built was in vanilla javascript, .
+              <span className="title">Regeneration:</span> When an Octopus loses
+              a tentacle, it grows back as good as new in an amazing feat of
+              regeneration-- in just 130 days! During a process called
+              morphallaxis, existing tissue is rearranged to allow for new
+              tissue to grow--suckers, chromatophores and all!
             </PortfolioList>
             <PortfolioList>
-              Here is a challenge I want to highlight and how I overcame it. It
-              wasn't easy but I did it.
+              <span className="title">Jet Propulsion:</span> To travel at super
+              fast speeds , an octopus will fill its mantle—which houses vital
+              organs—with water then quickly expel the water out of another body
+              part—called the siphon—often with a cloud of ink imbued with
+              chemicals. This movement allows octopuses to either subdue,
+              distract or impair their foes.
             </PortfolioList>
             <PortfolioList>
-              Here is a challenge I want to highlight and how I overcame it. It
-              wasn't easy but I did it.
+              <span className="title">Camouflage:</span> Masters of change, the
+              body of an Octopus is all protean—meaning all possibility! And
+              that does not stop at their shape! They can also camouflage using
+              ink-filled sacs called chromatophores and are the only known
+              animal to control the texture of their skin to create spikes,
+              ridges, and bumps.
             </PortfolioList>
-            <PortfolioList>
-              Here is a challenge I want to highlight and how I overcame it. It
-              wasn't easy but I did it.
-            </PortfolioList>
+            <a
+              href="http://www.octopusgalaxy.fun"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Learn more here!
+            </a>
           </PortfolioListItems>
-        </PortfolioMainContent>
+          <PortfolioListImages>
+            <PortfolioImg
+              src={Image2}
+              alt="Octopus jetting off with a cloud of ink in their tale"
+            />
+          </PortfolioListImages>
+        </PortfolioListWrapper>
       </PortfolioGrid>
     </>
   );

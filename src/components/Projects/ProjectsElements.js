@@ -42,6 +42,22 @@ export const ProjectsCard = styled.div`
   }
 `;
 
+export const ProjectsHighlightCard = styled.div`
+  display: grid;
+  flex-direction: 1 / span 2;
+  padding: 4%;
+  min-height: 475px;
+
+  a:hover {
+    background-color: ${(p) => p.theme.lightMed};
+  }
+
+  @media screen and (max-width: 480px) {
+    padding-bottom: 3%;
+    margin: 2% 0;
+  }
+`;
+
 export const ProjectsIcon = styled.img`
   background-image: cover center;
   width: 100%;
@@ -69,6 +85,12 @@ export const ProjectsH2 = styled.h2`
   text-align: left;
   border-top: 2px solid ${(p) => p.theme.melon};
   padding: 2% 0;
+
+  span.featured {
+    font-size: 3rem;
+    font-weight: 200;
+    color: ${(p) => p.theme.melon};
+  }
 `;
 
 export const ProjectsP = styled.p`

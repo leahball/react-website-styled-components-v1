@@ -6,6 +6,8 @@ export const PortfolioGrid = styled.div`
   z-index: 1;
   padding: 0 4%;
   background-color: ${(p) => p.theme.light};
+  align-items: center;
+  justify-content: center;
 
   @media screen and (max-width: 768px) {
     padding: 5%;
@@ -18,6 +20,7 @@ export const PortfolioHeaderContent = styled.header`
   grid-column: 1 / span 6;
   border-radius: 25px;
   padding: 6% 6%;
+  max-width: 1200px;
   background-image: url(${require(`../../images/octopus.png`)});
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -34,6 +37,7 @@ export const PortfolioMainContent = styled.main`
   display: grid;
   grid-column: 1 / span 6;
   margin: 2%;
+  max-width: 1200px;
   border-bottom: 3px dotted;
   border-bottom-color: ${(p) => p.theme.melon};
 
@@ -154,6 +158,7 @@ export const PortfolioP = styled.p`
 export const PortfolioListWrapper = styled.div`
   display: grid;
   grid-column: 1 / span 6;
+  max-width: 1200px;
 `;
 
 export const PortfolioListImages = styled.div`
@@ -218,7 +223,7 @@ export const HighlightWrapper = styled.div`
   grid-column: 1 / span 6;
   align-items: center;
   justify-content: center;
-  height: 1200px;
+  height: 300px;
 
   @media screen and (max-width: 768px) {
     display: flex;
@@ -232,13 +237,16 @@ export const HighlightTitle = styled.h2`
   font-size: 6rem;
   font-family: "Shrikhand", cursive;
   display: grid;
-  grid-column: 1 / 8;
+  grid-column: 1 / span(6);
   letter-spacing: 0.1rem;
   color: ${(p) => p.theme.ink};
+  background-color: ${(p) => p.theme.lightMed};
+  padding: 6%;
+  border-radius: 15px;
 
   @media screen and (max-width: 768px) {
     font-size: 4rem;
-    padding: 2 5%;
+    padding: 2% 5%;
   }
 `;
 

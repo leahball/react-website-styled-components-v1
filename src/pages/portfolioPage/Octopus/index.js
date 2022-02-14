@@ -1,7 +1,8 @@
 import React from "react";
 import Image1 from "./../../../images/strength-sm.png";
 import Image2 from "./../../../images/jet-propulsion-sm.png";
-import Highlight1 from "./../../../images/chaad.png";
+// import Highlight1 from "./../../../images/chaad.png";
+import Image3 from "./../../../images/coral-sml.png";
 
 import {
   PortfolioGrid,
@@ -19,14 +20,14 @@ import {
   HeaderTextWrapper,
   PortfolioListImages,
   HighlightWrapper,
-  HighlightCard,
+  // HighlightCard,
   HighlightImage,
   HighlightIcon,
   HighlightTitle,
-  HighlightH2,
-  HighlightP,
-  HighlightCol1,
-  HighlightCol2,
+  // HighlightH2,
+  // HighlightP,
+  // HighlightCol1,
+  // HighlightCol2,
   PortfolioListWrapper,
 } from "../PortfolioPageElements";
 
@@ -79,18 +80,13 @@ const Octopus = () => {
               studying these many armed friends while also learning{" "}
               <span className="highlight">React, Javascript and Redux.</span>
             </PortfolioP>
-            <PortfolioP>
-              While looking for coding challenges to practice I found a memory
-              game using simple vanilla javascript. While I had some very basic
-              experience with it, this challenge was my first time using xyz. I
-              used procreate to draw the first images and a for loop to create
-              the card board. There were some bugs in this first round:
-            </PortfolioP>
+            <PortfolioP>This is a work in progress! Stay tuned!!!!</PortfolioP>
           </PortfolioTextWrapper>
         </PortfolioMainContent>
         <HighlightWrapper>
-          <HighlightTitle>Highlights</HighlightTitle>
-          <HighlightCol1>
+          <HighlightTitle>Highlights . . . wip</HighlightTitle>
+
+          {/* <HighlightCol1>
             <HighlightCard>
               <HighlightImage>
                 <HighlightIcon src={Highlight1} />
@@ -150,7 +146,7 @@ const Octopus = () => {
                 interactions.
               </HighlightP>
             </HighlightCard>
-          </HighlightCol2>
+          </HighlightCol2> */}
         </HighlightWrapper>
         <PortfolioListWrapper>
           <PortfolioListItems>
@@ -178,11 +174,7 @@ const Octopus = () => {
               animal to control the texture of their skin to create spikes,
               ridges, and bumps.
             </PortfolioList>
-            <a
-              href="http://www.octopusgalaxy.fun"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="/" target="_blank" rel="noreferrer">
               Learn more here!
             </a>
           </PortfolioListItems>

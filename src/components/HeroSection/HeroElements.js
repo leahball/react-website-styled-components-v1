@@ -30,6 +30,10 @@ export const HeroContent = styled.div`
     min-height: 550px;
     justify-content: center;
   }
+
+  @media screen and (max-width: 480px) {
+    min-height: 300px;
+  }
 `;
 
 export const HeroH1 = styled.h1`
@@ -66,11 +70,13 @@ export const HeroP = styled.p`
   text-decoration-color: pink;
 
   @media screen and (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 2.4rem;
+    line-height: 4rem;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
+    line-height: 4rem;
   }
 `;
 
@@ -78,7 +84,7 @@ export const HeroBtnWrapper = styled.div`
   margin-top: 32px;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
   align-items: left;
 `;
 

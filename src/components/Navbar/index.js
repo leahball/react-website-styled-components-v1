@@ -39,6 +39,9 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks to="projects">projects</NavLinks>
             </NavItem>
+            <NavItem>
+              <NavLinks to="octopus">featured</NavLinks>
+            </NavItem>
           </NavMenu>
           <NavBtn>
             <NavBtnLink to="login">client portal</NavBtnLink>

@@ -1,12 +1,12 @@
 import React from "react";
 import {
   SkillsContainer,
-  SkillsLink,
+  SkillsList,
   SkillsWrapper,
-  SkillsLinksContainer,
-  SkillsLinksWrapper,
-  SkillsLinkItems,
-  SkillsLinkTitle,
+  SkillsListContainer,
+  SkillsListWrapper,
+  SkillsListItems,
+  SkillsListTitle,
   SkillsH1,
 } from "./SkillsElements";
 
@@ -16,45 +16,46 @@ const Skills = () => {
       <SkillsContainer id="skills">
         <SkillsWrapper>
           <SkillsH1>Skills</SkillsH1>
-          <SkillsLinksContainer>
-            <SkillsLinksWrapper>
-              <SkillsLinkItems>
-                <SkillsLinkTitle>Programming</SkillsLinkTitle>
-                <SkillsLink>React</SkillsLink>
-                <SkillsLink>HTML</SkillsLink>
-                <SkillsLink>CSS</SkillsLink>
-                <SkillsLink>JavaScript</SkillsLink>
-                <SkillsLink>Git</SkillsLink>
-                <SkillsLink>Node</SkillsLink>
-              </SkillsLinkItems>
-              <SkillsLinkItems>
-                <SkillsLinkTitle>Design</SkillsLinkTitle>
-                <SkillsLink>Figma</SkillsLink>
-                <SkillsLink>Illustrator</SkillsLink>
-                <SkillsLink>PhotoShop</SkillsLink>
-                <SkillsLink>InDesign</SkillsLink>
-                <SkillsLink>Procreate</SkillsLink>
-              </SkillsLinkItems>
-            </SkillsLinksWrapper>
-            <SkillsLinksWrapper>
-              <SkillsLinkItems>
-                <SkillsLinkTitle>Analog</SkillsLinkTitle>
-                <SkillsLink>Ceramics</SkillsLink>
-                <SkillsLink>Production Molds</SkillsLink>
-                <SkillsLink>Wax modeling</SkillsLink>
-                <SkillsLink>Metalsmithing</SkillsLink>
-                <SkillsLink>Sewing</SkillsLink>
-                <SkillsLink>Painting</SkillsLink>
-              </SkillsLinkItems>
-              <SkillsLinkItems>
-                <SkillsLinkTitle>Human</SkillsLinkTitle>
-                <SkillsLink>Workshop Facilitation</SkillsLink>
-                <SkillsLink>Organizing</SkillsLink>
-                <SkillsLink>Project Management</SkillsLink>
-                <SkillsLink>Sustainability</SkillsLink>
-              </SkillsLinkItems>
-            </SkillsLinksWrapper>
-          </SkillsLinksContainer>
+          <SkillsListContainer>
+            <SkillsListWrapper>
+              <SkillsListItems>
+                <SkillsListTitle>Programming</SkillsListTitle>
+                <SkillsList>React</SkillsList>
+                <SkillsList>HTML</SkillsList>
+                <SkillsList>CSS</SkillsList>
+                <SkillsList>JavaScript</SkillsList>
+                <SkillsList>Git</SkillsList>
+                <SkillsList>Node</SkillsList>
+              </SkillsListItems>
+              <SkillsListItems>
+                <SkillsListTitle>Design</SkillsListTitle>
+                <SkillsList>Figma</SkillsList>
+                <SkillsList>Illustrator</SkillsList>
+                <SkillsList>PhotoShop</SkillsList>
+                <SkillsList>InDesign</SkillsList>
+                <SkillsList>Procreate</SkillsList>
+                <SkillsList>Illustration</SkillsList>
+              </SkillsListItems>
+            </SkillsListWrapper>
+            <SkillsListWrapper>
+              <SkillsListItems>
+                <SkillsListTitle>Analog</SkillsListTitle>
+                <SkillsList>Ceramics</SkillsList>
+                <SkillsList>Mold-making</SkillsList>
+                <SkillsList>Wax modeling</SkillsList>
+                <SkillsList>Metal-smithing</SkillsList>
+                <SkillsList>Sewing</SkillsList>
+                <SkillsList>Painting</SkillsList>
+              </SkillsListItems>
+              <SkillsListItems>
+                <SkillsListTitle>Human</SkillsListTitle>
+                <SkillsList>Workshops</SkillsList>
+                <SkillsList>Organizing</SkillsList>
+                <SkillsList>Planning</SkillsList>
+                <SkillsList>Sustainability</SkillsList>
+              </SkillsListItems>
+            </SkillsListWrapper>
+          </SkillsListContainer>
         </SkillsWrapper>
       </SkillsContainer>
     </div>

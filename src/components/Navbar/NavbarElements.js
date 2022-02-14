@@ -25,6 +25,10 @@ export const NavbarContainer = styled.div`
   width: 100%;
   padding: 0 1%;
   max-width: 850px;
+
+  @media screen and (max-width: 768px) {
+    height: 100px;
+  }
 `;
 
 export const NavLogo = styled(LinkS)`

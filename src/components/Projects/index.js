@@ -3,6 +3,7 @@ import Icon1 from "./../../images/chaad.png";
 import Icon2 from "./../../images/ceramics.png";
 import Icon3 from "./../../images/change.png";
 import Icon4 from "./../../images/westSupply.png";
+import OctopusBanner from "./../../images/OctopusBanner.png";
 
 import {
   ProjectsContainer,
@@ -13,12 +14,24 @@ import {
   ProjectsIcon,
   ProjectsP,
   ProjectsImage,
+  ProjectsHighlightCard,
 } from "./ProjectsElements";
 
 const Projects = () => {
   return (
     <ProjectsContainer id="projects">
       <ProjectsH1>Projects</ProjectsH1>
+      <ProjectsHighlightCard>
+        <ProjectsImage>
+          <ProjectsIcon src={OctopusBanner} />
+        </ProjectsImage>
+        <a href="/octopus">
+          <ProjectsH2>
+            <span className="featured">Featured Project:</span> Octopus Galaxy
+          </ProjectsH2>
+        </a>
+      </ProjectsHighlightCard>
+
       <ProjectsWrapper>
         <ProjectsCard>
           <ProjectsImage>
